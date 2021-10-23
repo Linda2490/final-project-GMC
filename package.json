@@ -1,0 +1,49 @@
+{
+  "name": "parc_vehicules_projert_-parkar",
+  "version": "1.0.0",
+  "description": "internal application based on fleet management ",
+  "main": "server.js",
+  "scripts": {
+    "back": "nodemon server",
+    "front": "cd client && npm start",
+    "dev": "concurrently \"npm run front\" \"npm run back\""
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mongoose",
+    "react"
+  ],
+  "author": "Linda Zoghlami",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.7",
+    "ws": "3.3.2"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bootstrap": "^4.6.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.11.1",
+    "js-cookie": "^3.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.10",
+    "react-bootstrap": "^1.6.1",
+    "react-cookie": "^4.1.1",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.3"
+  },
+  "start": "node server.js",
+  "server": "nodemon server.js",
+  "client": "cd client && npm run start",
+  "server-install": "npm install",
+  "client-install": "cd client && npm install",
+  "install-all": "concurrently \"npm run server-install\" \"npm run client-install\"",
+  "dev": "concurrently \"npm run server\" \"npm run client\"",
+  "heroku-postbuild":   "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+  
+  
+  "proxy": "http://localhost:7000"
+}
