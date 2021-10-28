@@ -18,7 +18,7 @@ const Profile = () => {
  
  useEffect(() => {
   readcookie();        
- }, [])
+ })
   return (
     <div className="row py-5 px-4">
       <div className="col-xl-4 col-md-6 col-sm-10 mx-auto">
@@ -57,8 +57,8 @@ const Profile = () => {
           </div>
           <div className="py-4 px-4">
             <div className="d-flex align-items-center justify-content-between mb-3">
-              <a href="#" className="btn btn-dark btn-sm btn-block">
-                <Link to="kiloetconso">kilometrage consommation</Link>
+              <a className="btn btn-dark btn-sm btn-block">
+                <Link to="kiloetconso">kilometrage et consommation</Link>
               </a>
             </div>
             <div className="row"></div>
