@@ -33,14 +33,14 @@ const Landpage = () => {
   <footer>
     <div >
       <div className="row">
-        <div className="col-sm-6 col-md-3 item">
+        {/* <div className="col-sm-6 col-md-3 item">
           <h3>Services</h3>
           <ul>
-            <li ><a href="#">kilometrage</a></li>
-            <li><a href="#">consommation</a></li>
+            <li >kilometrage</li>
+            <li>consommation</li>
             
           </ul>
-        </div>
+        </div> */}
         <div className="col-sm-6 col-md-3 item">
           <h3>A propos</h3>
           <ul>

@@ -57,7 +57,7 @@ const Profile = () => {
           </div>
           <div className="py-4 px-4">
             <div className="d-flex align-items-center justify-content-between mb-3">
-              <a className="btn btn-dark btn-sm btn-block">
+              <a href='#kiloetconso' className="btn btn-dark btn-sm btn-block">
                 <Link to="kiloetconso">kilometrage et consommation</Link>
               </a>
             </div>

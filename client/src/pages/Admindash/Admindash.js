@@ -12,7 +12,8 @@ const Admindash = () => {
         height: '50 vh ',
       }}
     >
-      <a
+      <a 
+        href="#adddriver"
         className="btn"
         style={{
           fontSize: '1.5rem',
@@ -26,7 +27,7 @@ const Admindash = () => {
         </Link>
       </a>
       <a
-        
+        href='#addcars'
         className="btn"
         style={{
           fontSize: '1.5rem',

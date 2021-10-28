@@ -47,7 +47,7 @@ const Kiloetconso = () => {
     setKiloetconso({ ...kiloetconso, [e.target.name]: e.target.value })
   }
   return (
-    <div>
+    <div id='kiloetconso'>
       <section class="containerr">
         <h1 align="center">Kilometrage & Consommation</h1>
 
