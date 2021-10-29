@@ -4,10 +4,13 @@
   "description": "internal application based on fleet management ",
   "main": "server.js",
   "scripts": {
-    "back": "nodemon server",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
-    "front": "cd client && npm start",
-    "dev": "concurrently \"npm run front\" \"npm run back\""
+   
+    "dev": "react-scripts start",
+"start": "serve -s build",
+"build": "react-scripts build",
+"test": "react-scripts test --env=jsdom",
+"eject": "react-scripts eject",
+"heroku-postbuild": "npm run build"
   },
   "keywords": [
     "node",
@@ -34,7 +37,8 @@
     "react-bootstrap": "^1.6.1",
     "react-cookie": "^4.1.1",
     "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^2.0.3"
+    "semantic-ui-react": "^2.0.3",
+    "serve": "^12.0.1"
   },
   "start": "node server.js",
   "server": "nodemon server.js",
@@ -43,5 +47,6 @@
   "client-install": "cd client && npm install",
   "install-all": "concurrently \"npm run server-install\" \"npm run client-install\"",
   "dev": "concurrently \"npm run server\" \"npm run client\"",
-  "proxy": "https://nameless-waters-39572.herokuapp.com"
+  "proxy": "https://nameless-waters-39572.herokuapp.com",
+  "_id": "parc_vehicules_projert_-parkar@1.0.0"
 }
