@@ -44,6 +44,6 @@
   "client-install": "cd client && npm install",
   "install-all": "concurrently \"npm run server-install\" \"npm run client-install\"",
   "dev": "concurrently \"npm run server\" \"npm run client\"",
-  "proxy": "https://nameless-waters-39572.herokuapp.com",
+  "proxy": "https://polar-peak-61576.herokuapp.com",
   "_id": "parc_vehicules_projert_-parkar@1.0.0"
 }
