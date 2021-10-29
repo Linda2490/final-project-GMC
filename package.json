@@ -5,7 +5,6 @@
   "main": "server.js",
   "scripts": {
     "back": "nodemon server",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
     "front": "cd client && npm start",
     "dev": "concurrently \"npm run front\" \"npm run back\""
   },
@@ -38,6 +37,7 @@
     "serve": "^12.0.1"
   },
   "start": "node server.js",
+  "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
   "server": "nodemon server.js",
   "client": "cd client && npm run start",
   "server-install": "npm install",
