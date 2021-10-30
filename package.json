@@ -4,6 +4,8 @@
   "description": "internal application based on fleet management ",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
     "back": "nodemon server",
     "front": "cd client && npm start",
     "dev": "concurrently \"npm run front\" \"npm run back\""
@@ -36,14 +38,12 @@
     "semantic-ui-react": "^2.0.3",
     "serve": "^12.0.1"
   },
-  "start": "node server.js",
-  "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
   "server": "nodemon server.js",
   "client": "cd client && npm run start",
   "server-install": "npm install",
   "client-install": "cd client && npm install",
   "install-all": "concurrently \"npm run server-install\" \"npm run client-install\"",
   "dev": "concurrently \"npm run server\" \"npm run client\"",
-  "proxy": "http://localhost:7000",
+  "proxy": "https://murmuring-ravine-07115.herokuapp.com",
   "_id": "parc_vehicules_projert_-parkar@1.0.0"
 }
