@@ -40,5 +40,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://polar-peak-61576.herokuapp.com"
+  "proxy": "http://localhost:7000"
 }
