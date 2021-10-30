@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom'
 const Kiloetconso = () => {
   const dispatch = useDispatch()
   const kiloetconsos = useSelector(
-    (state) => state.kiloetconsoReducer.kiloetconsos,
+    (state) => state.kiloetconsoReducer.kiloetconsos
   )
   const load = useSelector((state) => state.kiloetconsoReducer.load)
   useEffect(() => {

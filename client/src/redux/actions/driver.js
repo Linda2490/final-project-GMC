@@ -68,10 +68,7 @@ export const getdrivers = () => async (dispatch) => {
     dispatch({ type: GET_ALL_DRIVERS_SUCCESS, payload: res.data.drivers })
   } catch (error) {
     console.log(error)
-    dispatch({
-      type: GET_ALL_DRIVERS_FAIL,
-      payload: error.response.data.errors,
-    })
+    
   }
 }
 export const addDriver = (driverr) => async (dispatch) => {
