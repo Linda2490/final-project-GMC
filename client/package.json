@@ -43,5 +43,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:7000"
+  "proxy": "https://murmuring-ravine-07115.herokuapp.com/"
 }

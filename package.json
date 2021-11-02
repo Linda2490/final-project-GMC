@@ -44,6 +44,6 @@
   "client-install": "cd client && npm install",
   "install-all": "concurrently \"npm run server-install\" \"npm run client-install\"",
   "dev": "concurrently \"npm run server\" \"npm run client\"",
-  "proxy": "http://localhost:7000",
+  "proxy": "https://murmuring-ravine-07115.herokuapp.com/",
   "_id": "parc_vehicules_projert_-parkar@1.0.0"
 }
