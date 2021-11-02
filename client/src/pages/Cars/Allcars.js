@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getcars } from '../../redux/actions/car'
 import OneCarr from './OneCarr'
+
 const Allcars = () => {
   const dispatch = useDispatch()
   const cars = useSelector((state) => state.carReducer.cars)
@@ -25,7 +26,7 @@ const Allcars = () => {
      {load ? (
           <h2>loading</h2>
         ) :cars && cars.length===0? <h2>nothing to show </h2>: 
-      (cars.map((el) =>  
+      (Array.isArray(cars) && cars.map((el) =>  
         <OneCarr key={el._id} n={el} /> ))}
      
      </div>

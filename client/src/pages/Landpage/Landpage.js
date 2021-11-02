@@ -11,20 +11,20 @@ const Landpage = () => {
 
       </header>
       
-      <div class="main">
-        <div class="d1"></div>
+      <div className="main">
 
-        <div class="d2"></div>
-        <div class="d3"></div>
-        <div class="d4"></div>
+        <div className="d1"></div>
+        <div className="d2"></div>
+        <div className="d3"></div>
+        <div className="d4"></div>
       </div>
 
-      <div class="sign">
+      <div className="sign">
         <span class="fast-flicker">
           🚗🚗🚗🚗🚗🚗🚗parKararKararp
         </span>
-        <span class="fast-flicker">🚗ark</span>
-        <span class="fast-flicker">🚗ar</span>
+        <span className="fast-flicker">🚗ark</span>
+        <span className="fast-flicker">🚗ar</span>
       </div>
          
       

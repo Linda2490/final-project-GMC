@@ -31,7 +31,7 @@ const Adddriver = () => {
         ) : drivers && drivers.length === 0 ? (
           <h2>nothing to show </h2>
         ) : (
-          drivers
+          Array.isArray(drivers) && drivers
             .filter((el) => el.role === 'driver')
             .map((el) => <Onedriver key={el._id} r={el} />)
         )}

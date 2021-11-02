@@ -12,7 +12,7 @@ const Alldrivers = () => {
       dispatch(getdrivers())
     
   }, [dispatch])
-  console.log(drivers)
+  
   return (
     <div>
     <div
@@ -25,7 +25,7 @@ const Alldrivers = () => {
      {load ? (
           <h2>loading</h2>
         ) :drivers && drivers.length===0? <h2>nothing to show </h2>: 
-      (drivers.filter((el) => el.role==="driver").map((el) =>  
+      (Array.isArray(drivers) && drivers.filter((el) => el.role==="driver").map((el) =>  
         <OneDriverr key={el._id} rr={el} /> ))}
      </div>
     </div>
