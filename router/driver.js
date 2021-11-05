@@ -85,7 +85,7 @@ router.post('/addDriver', isAuth, isAdmin, async (req, res) => {
     }
   }); 
 
-router.get('/murmuring-ravine-07115.herokuapp.com/getdrivers', async (req, res) => {
+router.get('https://murmuring-ravine-07115.herokuapp.com/getdrivers', async (req, res) => {
   try {
     const drivers = await Driver.find().populate('vehicule')
 
