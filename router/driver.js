@@ -96,7 +96,7 @@ router.get('https://murmuring-ravine-07115.herokuapp.com/getdrivers', async (req
   }
 })
 
-router.get("/:id", async (req, res) => {
+router.get("https://murmuring-ravine-07115.herokuapp.com/:id", async (req, res) => {
   try {
     const result = await Driver.findOne({ _id: req.params.id });
     res.send({ response: result, message: "geting driver successfully" });
