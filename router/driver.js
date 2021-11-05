@@ -85,7 +85,7 @@ router.post('/addDriver', isAuth, isAdmin, async (req, res) => {
     }
   }); 
 
-router.get('https://murmuring-ravine-07115.herokuapp.com/getdrivers', async (req, res) => {
+router.get('/getdrivers', async (req, res) => {
   try {
     const drivers = await Driver.find().populate('vehicule')
 
@@ -96,7 +96,7 @@ router.get('https://murmuring-ravine-07115.herokuapp.com/getdrivers', async (req
   }
 })
 
-router.get("https://murmuring-ravine-07115.herokuapp.com/:id", async (req, res) => {
+router.get("/:id", async (req, res) => {
   try {
     const result = await Driver.findOne({ _id: req.params.id });
     res.send({ response: result, message: "geting driver successfully" });
