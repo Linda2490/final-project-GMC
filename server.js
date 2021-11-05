@@ -21,13 +21,13 @@ connectDB()
 app.use(express.json())
 // router
 // driver
-app.use('/api/driver', driverRoutes)
+app.use('/murmuring-ravine-07115.herokuapp.com/api/driver', driverRoutes)
 // router
 // car
-app.use('/api/car', require('./router/cars'))
+app.use('murmuring-ravine-07115.herokuapp.com/api/car', require('./router/cars'))
 // router
 // kiloetconso
-app.use('/api/kiloetconso', require('./router/kiloetconsos'))
+app.use('murmuring-ravine-07115.herokuapp.com/api/kiloetconso', require('./router/kiloetconsos'))
 
 const PORT = process.env.PORT
 app.listen(PORT, (err) => {
