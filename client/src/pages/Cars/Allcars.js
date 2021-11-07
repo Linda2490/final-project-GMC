@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getcars } from '../../redux/actions/car'
 import OneCarr from './OneCarr'
-import carReducer from '../../redux/reducer/car'
 const Allcars = () => {
   const dispatch = useDispatch()
   const cars = useSelector((state) => state.carReducer.cars)
