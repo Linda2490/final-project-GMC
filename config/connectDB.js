@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const connectDB = async () => {
   try {
     await mongoose.connect(
-      process.env.BD_URI,
+      'mongodb+srv://lindadb2:linda1990@cluster0.jlzfq.mongodb.net/parkAR?retryWrites=true&w=majority',
       { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false },
     )
     console.log('database is connected')
