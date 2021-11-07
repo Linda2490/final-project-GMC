@@ -46,7 +46,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Landpage} />
-        <Route path="/alldrivers" component={Alldrivers} /> 
+        <Route path= "/alldrivers" component={Alldrivers} /> 
 
         <PrivateRoute path="/adddriver" component={Adddriver} />
         <PrivateRoute path={['/add', '/editdriver/:id']} component={Add} />

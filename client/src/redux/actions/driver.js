@@ -64,7 +64,7 @@ export const videErrors = () => {
 export const getdrivers = () => async (dispatch) => {
   dispatch({ type: GET_ALL_DRIVERS_LOAD })
   try {
-    const res = await axios.get('/api/driver/getdrivers')
+    const res = await axios.get(__dirname + '/api/driver/getdrivers')
     dispatch({ type: GET_ALL_DRIVERS_SUCCESS, payload: res.data.drivers })
   } catch (error) {
     console.log(error)

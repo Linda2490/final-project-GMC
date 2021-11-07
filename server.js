@@ -21,7 +21,7 @@ connectDB()
 app.use(express.json())
 // router
 // driver
-app.use('/api/driver', driverRoutes)
+app.use(__dirname + '/api/driver', driverRoutes)
 // router
 // car
 app.use('/api/car', require('./router/cars'))

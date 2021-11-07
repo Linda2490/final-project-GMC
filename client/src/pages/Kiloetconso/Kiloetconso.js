@@ -146,7 +146,7 @@ const Kiloetconso = () => {
         ) : kiloetconsos && kiloetconsos.length === 0 ? (
           <h2>nothing to show </h2>
         ) : (
-          kiloetconsos.map((el) => <Onekiloetconso key={el._id} r={el} />)
+          kiloetconsos?.map((el) => <Onekiloetconso key={el._id} r={el} />)
         )}
 
         <div align="center">
