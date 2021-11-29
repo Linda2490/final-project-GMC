@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Landpage = () => {
   return (
-    <div>
+    <div className="flex">
       <header  >
       <p style={{textAlign:'center'}}>PARKAR: POUR UNE NOUVELLE EXPERIENCE DE CONTROL DE VOTRE VEHICULE </p> 
       
